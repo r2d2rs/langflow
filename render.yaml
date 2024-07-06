@@ -8,6 +8,7 @@ services:
     branch: main
     healthCheckPath: /health
     autoDeploy: false
+    region: frankfurt  # Added this line to specify the Frankfurt region
     envVars:
       - key: LANGFLOW_DATABASE_URL
         value: sqlite:////home/user/.cache/langflow/langflow.db
